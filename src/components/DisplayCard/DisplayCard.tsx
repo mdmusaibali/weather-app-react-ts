@@ -41,7 +41,11 @@ const DisplayCard: React.FC<ItemsFormat> = ({ items }) => {
         </div>
       </div>
       <div className="lower">
-        <img className="svgIcon" src={`./assets/icons/${svg}`} />
+        <img
+          className="svgIcon"
+          src={`./assets/icons/${svg}`}
+          alt="Logo of weather"
+        />
         <p className="temperature">{temp}°C</p>
         <p className="description">{description}</p>
       </div>

@@ -3,8 +3,6 @@ const unixToStandard = (unix: number) => {
 
   const dateObject = new Date(milliseconds);
 
-  const humanDateFormat = dateObject.toLocaleString(); //2019-12-9 10:30:15
-
   const dayLong = dateObject.toLocaleString("en-US", { weekday: "long" });
   const monthLong = dateObject.toLocaleString("en-US", { month: "short" });
   const dateShort = dateObject.toLocaleString("en-US", { day: "numeric" }); // 9

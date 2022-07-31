@@ -81,22 +81,38 @@ const WeatherDetails: React.FC<propsFormat> = ({
       </div>
       <div className="future-details">
         <div className="future-days">
-          <img className="svgIconDesc" src={`./assets/icons/${svg1}`} />
+          <img
+            className="svgIconDesc"
+            src={`./assets/icons/${svg1}`}
+            alt="logo of weather"
+          />
           <p className="dayDesc">{day1Day}</p>
           <p className="tempDesc">{Number(day1.main.temp).toFixed(1)} °C</p>
         </div>
         <div className="future-days">
-          <img className="svgIconDesc" src={`./assets/icons/${svg2}`} />
+          <img
+            className="svgIconDesc"
+            src={`./assets/icons/${svg2}`}
+            alt="logo of weather"
+          />
           <p className="dayDesc">{day2Day}</p>
           <p className="tempDesc">{Number(day2.main.temp).toFixed(1)} °C</p>
         </div>
         <div className="future-days">
-          <img className="svgIconDesc" src={`./assets/icons/${svg3}`} />
+          <img
+            className="svgIconDesc"
+            src={`./assets/icons/${svg3}`}
+            alt="logo of weather"
+          />
           <p className="dayDesc">{day3Day}</p>
           <p className="tempDesc">{Number(day3.main.temp).toFixed(1)} °C</p>
         </div>
         <div className="future-days">
-          <img className="svgIconDesc" src={`./assets/icons/${svg4}`} />
+          <img
+            className="svgIconDesc"
+            src={`./assets/icons/${svg4}`}
+            alt="logo of weather"
+          />
           <p className="dayDesc">{day4Day}</p>
           <p className="tempDesc">{Number(day4.main.temp).toFixed(1)} °C</p>
         </div>

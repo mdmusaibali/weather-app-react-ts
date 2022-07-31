@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
 import DisplayCard from "./components/DisplayCard/DisplayCard";
