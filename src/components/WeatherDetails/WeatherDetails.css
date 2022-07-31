@@ -1,0 +1,117 @@
+.weatherDetails {
+  border-radius: 1.5rem;
+  padding: 4rem 2rem 4rem 10%;
+  background-color: #222831;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.details p {
+  margin-bottom: 1rem;
+}
+.question {
+  letter-spacing: 1.4px;
+  font-weight: 800;
+}
+.answer {
+  font-weight: 600;
+}
+.btn-change-location {
+  width: 100%;
+  padding: 0.8rem 0;
+  background-image: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+  color: white;
+  font-weight: 600;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border: none;
+  font-size: 1.5rem;
+}
+.btn-change-location:hover {
+  transform: scale(1.05);
+}
+.svgIconDesc {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+.future-details {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  background-color: #1a1e25;
+  border-radius: 1.5rem;
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+}
+.future-days {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dayDesc {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+.tempDesc {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.locInput {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  border: none;
+  background-color: white;
+
+  padding: 0.8rem 0.8rem;
+  font-size: 1.5rem;
+}
+.locInput:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .weatherDetails {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .locInput {
+    font-size: 1.8rem;
+    padding: 1.5rem 1rem;
+  }
+  .details {
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+  }
+  .future-details {
+    margin-bottom: 4rem;
+  }
+  .weatherDetails {
+    border-radius: 0rem;
+    width: 100%;
+  }
+  .btn-change-location {
+    font-size: 1.8rem;
+    padding: 1.5rem 0;
+  }
+}
+@media (max-width: 320px) {
+  .weatherDetails {
+    border-radius: 0rem;
+  }
+}

@@ -1,0 +1,75 @@
+.displayCard {
+  padding: 3rem 2rem;
+  background-color: skyblue;
+
+  /* background-image: url("./assets/img/rainy.jpg"); */
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.05) translateX(2%);
+  border-radius: 1.5rem;
+  transition: transform 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.displayCard:hover {
+  transform: scale(1.1) translateX(2%);
+}
+.svgBackground {
+  display: inline-block;
+}
+.svgIcon {
+  border-radius: 1.5rem;
+  background-color: white;
+}
+
+.day {
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.2rem;
+}
+.date {
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.8rem;
+}
+.temperature {
+  font-size: 7rem;
+  font-weight: 800;
+}
+.description {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.location {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 0.5rem;
+}
+.location-icon {
+  height: 2rem;
+  width: 2rem;
+}
+.location-place {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .displayCard {
+    transform: scale(1.05) translateY(2%);
+  }
+  .displayCard:hover {
+    transform: scale(1.1) translateY(2%);
+  }
+}
+@media (max-width: 425px) {
+  .displayCard {
+    transform: scale(1) translateY(0);
+    border-radius: 0rem;
+  }
+  .displayCard:hover {
+    transform: scale(1) translateY(0);
+  }
+}
